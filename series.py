@@ -140,11 +140,9 @@ def main_application_start():
 
     while True:
         user_input = input('->')
-
         if user_input == 'quit()':
             print('Application exiting.')
             sys.exit()
-
         try:
             print(eval(user_input))
         except:
