@@ -86,10 +86,10 @@ def test_lucas_invalid_input():
         series.fibonacci_recursion(actual)
 
 def test_lucas_large_number():
-    """ test for lucas number at a large sequence number
+    """ test for a larger lucas number
     """
-    actual = 20
-    expected = 15127
+    actual = 24
+    expected = 103682
     assert series.lucas(actual) == expected
     assert series.lucas_recursion(actual) == expected
 
@@ -127,7 +127,7 @@ def test_sum_series_large_number():
     assert series.sum_series_recursion(actual, 2, 1) == expected_lucas
 
 def test_sum_series_incorrect_input():
-    """ test sum series function for invalid type and invalid input
+    """ test sum series function for invalid inputs
     """
     actual = []
 
