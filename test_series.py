@@ -96,9 +96,9 @@ def test_lucas_large_number():
 def test_sum_series_at_n():
     """ test for fibonacci or lucas sequence number at n.
     """
-    actual = 6
-    expected_fib = 8
-    expected_lucas = 18
+    actual = 9
+    expected_fib = 34
+    expected_lucas = 76
     assert series.sum_series(actual) == expected_fib
     assert series.sum_series(actual, 2, 1) == expected_lucas
     assert series.sum_series_recursion(actual) == expected_fib
