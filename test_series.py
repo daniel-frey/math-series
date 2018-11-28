@@ -70,18 +70,10 @@ def test_lucas_zero():
     assert series.lucas(actual) == expected
     assert series.lucas_recursion(actual) == expected
 
-def test_lucas_one():
-    """ test for lucas number at sequence number 1
-    """
-    actual = 1
-    expected = 1
-    assert series.lucas(actual) == expected
-    assert series.lucas_recursion(actual) == expected
-
 def test_lucas_invalid_input():
     """ test for invalid type and invalid input (negative int)
     """
-    actual = {}
+    actual = []
 
     with raises(TypeError):
         series.fibonacci(actual)
@@ -123,17 +115,6 @@ def test_sum_series_zero():
     assert series.sum_series(actual, 2, 1) == expected_lucas
     assert series.sum_series_recursion(actual, 2, 1) == expected_lucas
 
-def test_sum_series_number_one():
-    """ test for fibonacci or lucas sequence number at 1.
-    second/third args determine which to return.
-    """
-    actual = 1
-    expected = 1
-    assert series.sum_series(actual) == expected
-    assert series.sum_series_recursion(actual) == expected
-    assert series.sum_series(actual, 2, 1) == expected
-    assert series.sum_series_recursion(actual, 2, 1) == expected
-
 def test_sum_series_large_number():
     """ test for lucas or fibo at a large number
     """
@@ -148,7 +129,7 @@ def test_sum_series_large_number():
 def test_sum_series_incorrect_input():
     """ test sum series function for invalid type and invalid input
     """
-    actual = {}
+    actual = []
 
     with raises(TypeError):
         series.sum_series(actual)
