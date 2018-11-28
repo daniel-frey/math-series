@@ -113,6 +113,7 @@ def sum_series_recursion(n, prev_2=0, prev_1=1):
 
 def main_application_start():
     print('''
+
     This module defines functions that implement mathematical series.
 
     See below for the instructions to run the application. You will choose from a few different options.
@@ -131,7 +132,7 @@ def main_application_start():
     sum_series(n[, prev_2, prev_1]): returns a number from sequence of either
         fibonacci or lucas.
 
-        The second and third arguments are optional and are used to determine the first
+        The second and third arguments are used to determine the first
         two numbers of returned sequence.
 
     sum_series_recursion(n[, prev_2, prev_1]): same as above. this version uses recursion
